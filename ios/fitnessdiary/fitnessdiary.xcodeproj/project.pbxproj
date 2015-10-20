@@ -53,6 +53,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B49255291BD620E300A4A373 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B492552A1BD620EC00A4A373 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B492552A1BD620EC00A4A373 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B492552B1BD620FC00A4A373 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		B4ED77BD1BD608C00069F7C1 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +96,8 @@
 		B4ED77C81BD608C00069F7C1 /* fitnessdiary */ = {
 			isa = PBXGroup;
 			children = (
+				B492552B1BD620FC00A4A373 /* Utility */,
+				B49255291BD620E300A4A373 /* Resources */,
 				B4ED77CC1BD608C00069F7C1 /* AppDelegate.h */,
 				B4ED77CD1BD608C00069F7C1 /* AppDelegate.m */,
 				B4ED77CF1BD608C00069F7C1 /* ViewController.h */,
