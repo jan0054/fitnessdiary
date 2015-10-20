@@ -1,0 +1,5 @@
+pod 'Parse'
+pod 'ParseUI'
+pod 'MMDrawerController'
+pod 'SZTextView'
+pod 'GKImagePicker@robseward', '~> 0.0'
