@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A4B4831D44971A9292E27981 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819939BF17EB210A27288D5 /* libPods.a */; };
+		B492552E1BD625F900A4A373 /* UIColor+ProjectColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B492552D1BD625F900A4A373 /* UIColor+ProjectColors.m */; settings = {ASSET_TAGS = (); }; };
+		B49255311BD6272D00A4A373 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49255301BD6272D00A4A373 /* LaunchViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B49255371BD62B2700A4A373 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49255361BD62B2700A4A373 /* DrawerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B492553B1BD62C8900A4A373 /* DrawerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B492553A1BD62C8900A4A373 /* DrawerCell.m */; settings = {ASSET_TAGS = (); }; };
+		B492553E1BD62CE600A4A373 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B492553D1BD62CE600A4A373 /* SettingsView.m */; settings = {ASSET_TAGS = (); }; };
 		B4ED77CB1BD608C00069F7C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ED77CA1BD608C00069F7C1 /* main.m */; };
 		B4ED77CE1BD608C00069F7C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ED77CD1BD608C00069F7C1 /* AppDelegate.m */; };
-		B4ED77D11BD608C00069F7C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ED77D01BD608C00069F7C1 /* ViewController.m */; };
 		B4ED77D41BD608C00069F7C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4ED77D21BD608C00069F7C1 /* Main.storyboard */; };
 		B4ED77D61BD608C00069F7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4ED77D51BD608C00069F7C1 /* Assets.xcassets */; };
 		B4ED77D91BD608C00069F7C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4ED77D71BD608C00069F7C1 /* LaunchScreen.storyboard */; };
@@ -19,12 +23,20 @@
 /* Begin PBXFileReference section */
 		2819939BF17EB210A27288D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAF29675E005B959EAA8FE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B492552C1BD625F900A4A373 /* UIColor+ProjectColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ProjectColors.h"; sourceTree = "<group>"; };
+		B492552D1BD625F900A4A373 /* UIColor+ProjectColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ProjectColors.m"; sourceTree = "<group>"; };
+		B492552F1BD6272D00A4A373 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		B49255301BD6272D00A4A373 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		B49255351BD62B2700A4A373 /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		B49255361BD62B2700A4A373 /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		B49255391BD62C8900A4A373 /* DrawerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerCell.h; sourceTree = "<group>"; };
+		B492553A1BD62C8900A4A373 /* DrawerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerCell.m; sourceTree = "<group>"; };
+		B492553C1BD62CE600A4A373 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
+		B492553D1BD62CE600A4A373 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
 		B4ED77C61BD608C00069F7C1 /* fitnessdiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitnessdiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4ED77CA1BD608C00069F7C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4ED77CC1BD608C00069F7C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4ED77CD1BD608C00069F7C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B4ED77CF1BD608C00069F7C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B4ED77D01BD608C00069F7C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B4ED77D31BD608C00069F7C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4ED77D51BD608C00069F7C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4ED77D81BD608C00069F7C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,8 +83,19 @@
 		B492552B1BD620FC00A4A373 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B492552C1BD625F900A4A373 /* UIColor+ProjectColors.h */,
+				B492552D1BD625F900A4A373 /* UIColor+ProjectColors.m */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		B49255381BD62C6100A4A373 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B49255391BD62C8900A4A373 /* DrawerCell.h */,
+				B492553A1BD62C8900A4A373 /* DrawerCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		B4ED77BD1BD608C00069F7C1 = {
@@ -96,13 +119,18 @@
 		B4ED77C81BD608C00069F7C1 /* fitnessdiary */ = {
 			isa = PBXGroup;
 			children = (
-				B492552B1BD620FC00A4A373 /* Utility */,
 				B49255291BD620E300A4A373 /* Resources */,
+				B492552B1BD620FC00A4A373 /* Utility */,
+				B49255381BD62C6100A4A373 /* Cells */,
 				B4ED77CC1BD608C00069F7C1 /* AppDelegate.h */,
 				B4ED77CD1BD608C00069F7C1 /* AppDelegate.m */,
-				B4ED77CF1BD608C00069F7C1 /* ViewController.h */,
-				B4ED77D01BD608C00069F7C1 /* ViewController.m */,
 				B4ED77D21BD608C00069F7C1 /* Main.storyboard */,
+				B492552F1BD6272D00A4A373 /* LaunchViewController.h */,
+				B49255301BD6272D00A4A373 /* LaunchViewController.m */,
+				B49255351BD62B2700A4A373 /* DrawerViewController.h */,
+				B49255361BD62B2700A4A373 /* DrawerViewController.m */,
+				B492553C1BD62CE600A4A373 /* SettingsView.h */,
+				B492553D1BD62CE600A4A373 /* SettingsView.m */,
 				B4ED77D51BD608C00069F7C1 /* Assets.xcassets */,
 				B4ED77D71BD608C00069F7C1 /* LaunchScreen.storyboard */,
 				B4ED77DA1BD608C00069F7C1 /* Info.plist */,
@@ -248,9 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4ED77D11BD608C00069F7C1 /* ViewController.m in Sources */,
 				B4ED77CE1BD608C00069F7C1 /* AppDelegate.m in Sources */,
 				B4ED77CB1BD608C00069F7C1 /* main.m in Sources */,
+				B492552E1BD625F900A4A373 /* UIColor+ProjectColors.m in Sources */,
+				B49255371BD62B2700A4A373 /* DrawerViewController.m in Sources */,
+				B492553B1BD62C8900A4A373 /* DrawerCell.m in Sources */,
+				B49255311BD6272D00A4A373 /* LaunchViewController.m in Sources */,
+				B492553E1BD62CE600A4A373 /* SettingsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
