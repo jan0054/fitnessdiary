@@ -10,7 +10,7 @@
 
 @interface UIColor (ProjectColors)
 
-+ (UIColor*) example_color;
++ (UIColor*) navBarTeal;
 
 
 @end

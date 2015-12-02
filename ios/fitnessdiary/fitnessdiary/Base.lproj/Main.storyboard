@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HYS-YW-pTQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fhm-f6-EMi">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Drawer View Controller-->
@@ -33,7 +33,377 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pj8-ZX-MEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="-592"/>
+            <point key="canvasLocation" x="-353" y="69"/>
+        </scene>
+        <!--選擇性別-->
+        <scene sceneID="joS-tf-6qq">
+            <objects>
+                <viewController id="elg-tr-Smg" customClass="GenderPickerView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ii1-C6-6vj"/>
+                        <viewControllerLayoutGuide type="bottom" id="jEG-Zo-wTe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="076-Qo-5rQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUD-ei-l2x">
+                                <rect key="frame" x="97" y="319" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="選男"/>
+                                <connections>
+                                    <action selector="maleButtonTap:" destination="elg-tr-Smg" eventType="touchUpInside" id="wjq-Lu-4Og"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfq-2F-SFH">
+                                <rect key="frame" x="215" y="319" width="66" height="30"/>
+                                <animations/>
+                                <state key="normal" title="選女"/>
+                                <connections>
+                                    <action selector="femaleButtonTap:" destination="elg-tr-Smg" eventType="touchUpInside" id="4kY-Pr-XPq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="男性描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDk-Wv-yVm">
+                                <rect key="frame" x="37" y="388" width="102" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女性描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew0-no-T2n">
+                                <rect key="frame" x="215" y="388" width="108" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="歡迎標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-7M-FpB">
+                                <rect key="frame" x="122" y="108" width="131" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="選擇性別" id="oZY-Kk-OZj"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="femaleButton" destination="Cfq-2F-SFH" id="dI1-JP-dfH"/>
+                        <outlet property="femaleLabel" destination="ew0-no-T2n" id="5rZ-di-Ogx"/>
+                        <outlet property="maleButton" destination="WUD-ei-l2x" id="TRY-cd-IsG"/>
+                        <outlet property="maleLabel" destination="bDk-Wv-yVm" id="n0x-lZ-6f3"/>
+                        <outlet property="welcomeLabel" destination="TfZ-7M-FpB" id="zYf-nw-54K"/>
+                        <segue destination="kKG-j3-7OK" kind="show" identifier="chosegendersegue" id="fx1-MJ-3rn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOo-gh-Ehg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9.5" y="-637.5"/>
+        </scene>
+        <!--Gender View-->
+        <scene sceneID="nll-yn-AbX">
+            <objects>
+                <viewController id="kKG-j3-7OK" customClass="GenderView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rR8-cf-gKh"/>
+                        <viewControllerLayoutGuide type="bottom" id="kQg-vz-BXR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S0B-2d-ADW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="描述標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0v-ZY-e9o">
+                                <rect key="frame" x="145" y="146" width="84" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cSA-dT-zDh">
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="IC6-Br-X2e">
+                            <connections>
+                                <action selector="nextButtonTap:" destination="kKG-j3-7OK" id="Jap-q2-JvH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="E0v-ZY-e9o" id="C6f-fQ-4Lp"/>
+                        <outlet property="nextButton" destination="IC6-Br-X2e" id="T1N-Xr-Ssd"/>
+                        <segue destination="tnR-AQ-61V" kind="show" identifier="tobirthdaysegue" id="yRa-BL-LQB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dc-Js-RNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530.5" y="-637.5"/>
+        </scene>
+        <!--熱量計算-->
+        <scene sceneID="1wV-xS-zf9">
+            <objects>
+                <viewController id="tnR-AQ-61V" customClass="BirthdayPickerView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4gk-bp-U46"/>
+                        <viewControllerLayoutGuide type="bottom" id="L8m-QB-YD1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iRo-Fu-BcB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生日標籤 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-dj-ZiU">
+                                <rect key="frame" x="149" y="126" width="77" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="熱量計算" id="oDs-5Z-PwY">
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="rR9-Py-xJr"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="gTr-OW-q9d" kind="show" identifier="toheightsegue" id="2al-EU-SUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ZX-UM-FfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.5" y="-637.5"/>
+        </scene>
+        <!--熱量計算-->
+        <scene sceneID="ffO-Af-BhV">
+            <objects>
+                <viewController id="gTr-OW-q9d" customClass="HeightPickerView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YSA-ii-WZj"/>
+                        <viewControllerLayoutGuide type="bottom" id="BEf-5H-0hS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="86v-F9-WEl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="身高標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxM-1b-KrZ">
+                                <rect key="frame" x="152" y="110" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="熱量計算" id="71C-sM-SvH">
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="af4-6n-qwO"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="81P-Sb-EBz" kind="show" identifier="toweightsegue" id="vLU-DJ-ixl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZj-xj-VKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543.5" y="-637.5"/>
+        </scene>
+        <!--熱量計算-->
+        <scene sceneID="ob6-UO-q7e">
+            <objects>
+                <viewController id="81P-Sb-EBz" customClass="WeightPickerView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EtJ-D2-6Y7"/>
+                        <viewControllerLayoutGuide type="bottom" id="31R-Uf-V7w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sjD-o7-usG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="體重標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sV-qL-J8B">
+                                <rect key="frame" x="144" y="107" width="87" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="熱量計算" id="qkC-dD-RH7">
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="mME-Dx-vmu"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="mkz-ra-USR" kind="show" identifier="totargetweightsegue" id="w7r-4V-2zr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytl-da-mGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2035.5" y="-637.5"/>
+        </scene>
+        <!--熱量計算-->
+        <scene sceneID="kxh-Jl-Pig">
+            <objects>
+                <viewController id="mkz-ra-USR" customClass="TargetWeightPickerView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hSW-Lt-rXe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yda-Yf-Ci5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rMS-r4-8HJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="理想體重標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYI-er-kNV">
+                                <rect key="frame" x="133" y="97" width="109" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="熱量計算" id="COi-Ek-8g2">
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="fef-pk-cBp"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="ay9-PF-dex" kind="show" identifier="toactivepickersegue" id="ZnV-b0-Crj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZ1-vZ-uPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2528.5" y="-637.5"/>
+        </scene>
+        <!--熱量計算-->
+        <scene sceneID="JfS-fM-3m5">
+            <objects>
+                <viewController id="ay9-PF-dex" customClass="ActivePickerView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pdf-Xy-aHV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zge-R9-tDF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yse-mA-aAK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="活動量標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-vZ-CEs">
+                                <rect key="frame" x="138" y="94" width="98" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="熱量計算" id="7kX-qQ-S6I">
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="ZVH-sR-p9T"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="O1R-wQ-5MY" kind="show" identifier="togoallengthsegue" id="KkL-eb-09X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22C-ea-fyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3019.5" y="-637.5"/>
+        </scene>
+        <!--熱量計算-->
+        <scene sceneID="NKz-Gh-zAI">
+            <objects>
+                <viewController id="O1R-wQ-5MY" customClass="GoalLengthPickerView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lJC-PT-07w"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hcj-rF-wph"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bAV-zI-RDg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="達成時間標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-ob-eWp">
+                                <rect key="frame" x="133" y="95" width="109" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="熱量計算" id="hY3-c8-DYo">
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="F0t-Yn-XsJ"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="3c2-lq-iSe" kind="show" identifier="tosetupcompletesegue" id="7at-J0-4Cw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csi-Ew-yTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3526.5" y="-637.5"/>
+        </scene>
+        <!--熱量計算-->
+        <scene sceneID="vDO-4N-zlf">
+            <objects>
+                <viewController id="3c2-lq-iSe" customClass="SetupCompleteView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yw6-R5-TJW"/>
+                        <viewControllerLayoutGuide type="bottom" id="e56-b6-O3P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DHP-ES-xaW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="目標標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MH-QM-ygC">
+                                <rect key="frame" x="147" y="90" width="80" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="熱量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvV-jX-RUD">
+                                <rect key="frame" x="155" y="206" width="53" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="恭喜標籤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxB-vP-4K5">
+                                <rect key="frame" x="147" y="331" width="80" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-bZ-Mdu">
+                                <rect key="frame" x="160" y="394" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="小天使"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="熱量計算" id="WKA-fF-w0k">
+                        <barButtonItem key="rightBarButtonItem" title="完成 " id="I9W-KU-Fvx"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pke-tk-4Ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4044.5" y="-637.5"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="Vcw-0j-UPK">
@@ -199,6 +569,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HmM-fQ-5Vw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="264" y="1587"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V6w-jo-sZ1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fhm-f6-EMi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HwU-Xa-zt3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="elg-tr-Smg" kind="relationship" relationship="rootViewController" id="pxz-nA-SUJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2a-FW-a2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465.5" y="-637.5"/>
         </scene>
     </scenes>
 </document>

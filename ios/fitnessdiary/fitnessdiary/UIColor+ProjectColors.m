@@ -10,9 +10,9 @@
 
 @implementation UIColor (ProjectColors)
 
-+ (UIColor*) example_color
++ (UIColor*) navBarTeal
 {
-    return [UIColor colorWithRed:225.0/255.0 green:152.0/255.0 blue:0.0/255.0 alpha:1];
+    return [UIColor colorWithRed:171/255.0 green:181/255.0 blue:59/255.0 alpha:1];
 }
 
 

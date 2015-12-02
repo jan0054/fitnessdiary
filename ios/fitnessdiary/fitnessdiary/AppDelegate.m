@@ -35,6 +35,14 @@
         NSLog(@"iOS8 Push registration");
     }
     
+    //styling
+    // This sets the background color of the navigation
+    [[UINavigationBar appearance] setBarTintColor:[UIColor navBarTeal]];
+    // This sets the text color of the navigation links
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    // This sets the title color of the navigation bar
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue" size:19.0]}];
+
     
     return YES;
 }

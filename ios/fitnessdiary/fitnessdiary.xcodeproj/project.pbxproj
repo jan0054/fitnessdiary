@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A4B4831D44971A9292E27981 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819939BF17EB210A27288D5 /* libPods.a */; };
-		B492552E1BD625F900A4A373 /* UIColor+ProjectColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B492552D1BD625F900A4A373 /* UIColor+ProjectColors.m */; settings = {ASSET_TAGS = (); }; };
-		B49255311BD6272D00A4A373 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49255301BD6272D00A4A373 /* LaunchViewController.m */; settings = {ASSET_TAGS = (); }; };
-		B49255371BD62B2700A4A373 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49255361BD62B2700A4A373 /* DrawerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		B492553B1BD62C8900A4A373 /* DrawerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B492553A1BD62C8900A4A373 /* DrawerCell.m */; settings = {ASSET_TAGS = (); }; };
-		B492553E1BD62CE600A4A373 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B492553D1BD62CE600A4A373 /* SettingsView.m */; settings = {ASSET_TAGS = (); }; };
+		B492552E1BD625F900A4A373 /* UIColor+ProjectColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B492552D1BD625F900A4A373 /* UIColor+ProjectColors.m */; };
+		B49255311BD6272D00A4A373 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49255301BD6272D00A4A373 /* LaunchViewController.m */; };
+		B49255371BD62B2700A4A373 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49255361BD62B2700A4A373 /* DrawerViewController.m */; };
+		B492553B1BD62C8900A4A373 /* DrawerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B492553A1BD62C8900A4A373 /* DrawerCell.m */; };
+		B492553E1BD62CE600A4A373 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B492553D1BD62CE600A4A373 /* SettingsView.m */; };
+		B4E9E26D1C0EE5DA00A3DBE0 /* GenderPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E26C1C0EE5DA00A3DBE0 /* GenderPickerView.m */; };
+		B4E9E2701C0EE61D00A3DBE0 /* GenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E26F1C0EE61D00A3DBE0 /* GenderView.m */; };
+		B4E9E2731C0EE67400A3DBE0 /* BirthdayPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E2721C0EE67400A3DBE0 /* BirthdayPickerView.m */; };
+		B4E9E2761C0EE68300A3DBE0 /* HeightPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E2751C0EE68300A3DBE0 /* HeightPickerView.m */; };
+		B4E9E2791C0EE68F00A3DBE0 /* WeightPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E2781C0EE68F00A3DBE0 /* WeightPickerView.m */; };
+		B4E9E27C1C0EE6A200A3DBE0 /* TargetWeightPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E27B1C0EE6A200A3DBE0 /* TargetWeightPickerView.m */; };
+		B4E9E27F1C0EE6BF00A3DBE0 /* ActivePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E27E1C0EE6BF00A3DBE0 /* ActivePickerView.m */; };
+		B4E9E2821C0EE6D200A3DBE0 /* GoalLengthPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E2811C0EE6D200A3DBE0 /* GoalLengthPickerView.m */; };
+		B4E9E2851C0EE70F00A3DBE0 /* SetupCompleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E9E2841C0EE70F00A3DBE0 /* SetupCompleteView.m */; };
 		B4ED77CB1BD608C00069F7C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ED77CA1BD608C00069F7C1 /* main.m */; };
 		B4ED77CE1BD608C00069F7C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ED77CD1BD608C00069F7C1 /* AppDelegate.m */; };
 		B4ED77D41BD608C00069F7C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4ED77D21BD608C00069F7C1 /* Main.storyboard */; };
@@ -33,6 +42,24 @@
 		B492553A1BD62C8900A4A373 /* DrawerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerCell.m; sourceTree = "<group>"; };
 		B492553C1BD62CE600A4A373 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
 		B492553D1BD62CE600A4A373 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
+		B4E9E26B1C0EE5DA00A3DBE0 /* GenderPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderPickerView.h; sourceTree = "<group>"; };
+		B4E9E26C1C0EE5DA00A3DBE0 /* GenderPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderPickerView.m; sourceTree = "<group>"; };
+		B4E9E26E1C0EE61D00A3DBE0 /* GenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderView.h; sourceTree = "<group>"; };
+		B4E9E26F1C0EE61D00A3DBE0 /* GenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderView.m; sourceTree = "<group>"; };
+		B4E9E2711C0EE67400A3DBE0 /* BirthdayPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayPickerView.h; sourceTree = "<group>"; };
+		B4E9E2721C0EE67400A3DBE0 /* BirthdayPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayPickerView.m; sourceTree = "<group>"; };
+		B4E9E2741C0EE68300A3DBE0 /* HeightPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeightPickerView.h; sourceTree = "<group>"; };
+		B4E9E2751C0EE68300A3DBE0 /* HeightPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeightPickerView.m; sourceTree = "<group>"; };
+		B4E9E2771C0EE68F00A3DBE0 /* WeightPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightPickerView.h; sourceTree = "<group>"; };
+		B4E9E2781C0EE68F00A3DBE0 /* WeightPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightPickerView.m; sourceTree = "<group>"; };
+		B4E9E27A1C0EE6A200A3DBE0 /* TargetWeightPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetWeightPickerView.h; sourceTree = "<group>"; };
+		B4E9E27B1C0EE6A200A3DBE0 /* TargetWeightPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetWeightPickerView.m; sourceTree = "<group>"; };
+		B4E9E27D1C0EE6BF00A3DBE0 /* ActivePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivePickerView.h; sourceTree = "<group>"; };
+		B4E9E27E1C0EE6BF00A3DBE0 /* ActivePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivePickerView.m; sourceTree = "<group>"; };
+		B4E9E2801C0EE6D200A3DBE0 /* GoalLengthPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalLengthPickerView.h; sourceTree = "<group>"; };
+		B4E9E2811C0EE6D200A3DBE0 /* GoalLengthPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalLengthPickerView.m; sourceTree = "<group>"; };
+		B4E9E2831C0EE70F00A3DBE0 /* SetupCompleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupCompleteView.h; sourceTree = "<group>"; };
+		B4E9E2841C0EE70F00A3DBE0 /* SetupCompleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupCompleteView.m; sourceTree = "<group>"; };
 		B4ED77C61BD608C00069F7C1 /* fitnessdiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitnessdiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4ED77CA1BD608C00069F7C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4ED77CC1BD608C00069F7C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +125,31 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		B4E9E2861C0EE7D200A3DBE0 /* SetupViews */ = {
+			isa = PBXGroup;
+			children = (
+				B4E9E26B1C0EE5DA00A3DBE0 /* GenderPickerView.h */,
+				B4E9E26C1C0EE5DA00A3DBE0 /* GenderPickerView.m */,
+				B4E9E26E1C0EE61D00A3DBE0 /* GenderView.h */,
+				B4E9E26F1C0EE61D00A3DBE0 /* GenderView.m */,
+				B4E9E2711C0EE67400A3DBE0 /* BirthdayPickerView.h */,
+				B4E9E2721C0EE67400A3DBE0 /* BirthdayPickerView.m */,
+				B4E9E2741C0EE68300A3DBE0 /* HeightPickerView.h */,
+				B4E9E2751C0EE68300A3DBE0 /* HeightPickerView.m */,
+				B4E9E2771C0EE68F00A3DBE0 /* WeightPickerView.h */,
+				B4E9E2781C0EE68F00A3DBE0 /* WeightPickerView.m */,
+				B4E9E27A1C0EE6A200A3DBE0 /* TargetWeightPickerView.h */,
+				B4E9E27B1C0EE6A200A3DBE0 /* TargetWeightPickerView.m */,
+				B4E9E27D1C0EE6BF00A3DBE0 /* ActivePickerView.h */,
+				B4E9E27E1C0EE6BF00A3DBE0 /* ActivePickerView.m */,
+				B4E9E2801C0EE6D200A3DBE0 /* GoalLengthPickerView.h */,
+				B4E9E2811C0EE6D200A3DBE0 /* GoalLengthPickerView.m */,
+				B4E9E2831C0EE70F00A3DBE0 /* SetupCompleteView.h */,
+				B4E9E2841C0EE70F00A3DBE0 /* SetupCompleteView.m */,
+			);
+			name = SetupViews;
+			sourceTree = "<group>";
+		};
 		B4ED77BD1BD608C00069F7C1 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +171,7 @@
 		B4ED77C81BD608C00069F7C1 /* fitnessdiary */ = {
 			isa = PBXGroup;
 			children = (
+				B4E9E2861C0EE7D200A3DBE0 /* SetupViews */,
 				B49255291BD620E300A4A373 /* Resources */,
 				B492552B1BD620FC00A4A373 /* Utility */,
 				B49255381BD62C6100A4A373 /* Cells */,
@@ -277,11 +330,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4ED77CE1BD608C00069F7C1 /* AppDelegate.m in Sources */,
+				B4E9E2731C0EE67400A3DBE0 /* BirthdayPickerView.m in Sources */,
+				B4E9E2821C0EE6D200A3DBE0 /* GoalLengthPickerView.m in Sources */,
+				B4E9E2851C0EE70F00A3DBE0 /* SetupCompleteView.m in Sources */,
 				B4ED77CB1BD608C00069F7C1 /* main.m in Sources */,
 				B492552E1BD625F900A4A373 /* UIColor+ProjectColors.m in Sources */,
+				B4E9E26D1C0EE5DA00A3DBE0 /* GenderPickerView.m in Sources */,
+				B4E9E27C1C0EE6A200A3DBE0 /* TargetWeightPickerView.m in Sources */,
 				B49255371BD62B2700A4A373 /* DrawerViewController.m in Sources */,
 				B492553B1BD62C8900A4A373 /* DrawerCell.m in Sources */,
+				B4E9E2701C0EE61D00A3DBE0 /* GenderView.m in Sources */,
 				B49255311BD6272D00A4A373 /* LaunchViewController.m in Sources */,
+				B4E9E27F1C0EE6BF00A3DBE0 /* ActivePickerView.m in Sources */,
+				B4E9E2761C0EE68300A3DBE0 /* HeightPickerView.m in Sources */,
+				B4E9E2791C0EE68F00A3DBE0 /* WeightPickerView.m in Sources */,
 				B492553E1BD62CE600A4A373 /* SettingsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
