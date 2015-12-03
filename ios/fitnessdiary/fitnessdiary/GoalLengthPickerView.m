@@ -12,4 +12,8 @@
 
 @implementation GoalLengthPickerView
 
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender {
+    
+    [self performSegueWithIdentifier:@"tosetupcompletesegue" sender:nil];
+}
 @end

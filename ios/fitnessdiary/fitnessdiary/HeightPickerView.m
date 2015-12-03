@@ -12,4 +12,8 @@
 
 @implementation HeightPickerView
 
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender {
+    
+    [self performSegueWithIdentifier:@"toweightsegue" sender:nil];
+}
 @end

@@ -12,4 +12,9 @@
 
 @implementation SetupCompleteView
 
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender {
+}
+
+- (IBAction)angelButtonTap:(UIButton *)sender {
+}
 @end

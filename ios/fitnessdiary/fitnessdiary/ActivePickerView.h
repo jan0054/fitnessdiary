@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ActivePickerView : UIViewController
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender;
 
 @end

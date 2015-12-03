@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HeightPickerView : UIViewController
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender;
 
 @end

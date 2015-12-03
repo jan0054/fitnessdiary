@@ -12,4 +12,8 @@
 
 @implementation BirthdayPickerView
 
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender {
+    
+    [self performSegueWithIdentifier:@"toheightsegue" sender:nil];
+}
 @end

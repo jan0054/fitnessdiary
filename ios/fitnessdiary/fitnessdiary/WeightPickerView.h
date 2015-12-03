@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WeightPickerView : UIViewController
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender;
 
 @end

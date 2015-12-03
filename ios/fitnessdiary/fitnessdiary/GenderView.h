@@ -13,4 +13,6 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *nextButton;
 - (IBAction)nextButtonTap:(UIBarButtonItem *)sender;
 
+@property int gender;
+
 @end

@@ -42,7 +42,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     // This sets the title color of the navigation bar
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue" size:19.0]}];
-
+    [PFUser enableAutomaticUser];
     
     return YES;
 }

@@ -12,4 +12,8 @@
 
 @implementation TargetWeightPickerView
 
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender {
+    
+    [self performSegueWithIdentifier:@"toactivepickersegue" sender:nil];
+}
 @end

@@ -168,7 +168,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="熱量計算" id="oDs-5Z-PwY">
-                        <barButtonItem key="rightBarButtonItem" title="下一步" id="rR9-Py-xJr"/>
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="rR9-Py-xJr">
+                            <connections>
+                                <action selector="doneButtonTap:" destination="tnR-AQ-61V" id="JYt-f7-WhS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -203,7 +207,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="熱量計算" id="71C-sM-SvH">
-                        <barButtonItem key="rightBarButtonItem" title="下一步" id="af4-6n-qwO"/>
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="af4-6n-qwO">
+                            <connections>
+                                <action selector="doneButtonTap:" destination="gTr-OW-q9d" id="Mgl-Gi-ekg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -238,7 +246,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="熱量計算" id="qkC-dD-RH7">
-                        <barButtonItem key="rightBarButtonItem" title="下一步" id="mME-Dx-vmu"/>
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="mME-Dx-vmu">
+                            <connections>
+                                <action selector="doneButtonTap:" destination="81P-Sb-EBz" id="UtV-zR-ktn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -273,7 +285,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="熱量計算" id="COi-Ek-8g2">
-                        <barButtonItem key="rightBarButtonItem" title="下一步" id="fef-pk-cBp"/>
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="fef-pk-cBp">
+                            <connections>
+                                <action selector="doneButtonTap:" destination="mkz-ra-USR" id="cXs-ti-Z7c"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -308,7 +324,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="熱量計算" id="7kX-qQ-S6I">
-                        <barButtonItem key="rightBarButtonItem" title="下一步" id="ZVH-sR-p9T"/>
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="ZVH-sR-p9T">
+                            <connections>
+                                <action selector="doneButtonTap:" destination="ay9-PF-dex" id="T8a-NP-Pih"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -343,7 +363,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="熱量計算" id="hY3-c8-DYo">
-                        <barButtonItem key="rightBarButtonItem" title="下一步" id="F0t-Yn-XsJ"/>
+                        <barButtonItem key="rightBarButtonItem" title="下一步" id="F0t-Yn-XsJ">
+                            <connections>
+                                <action selector="doneButtonTap:" destination="O1R-wQ-5MY" id="t7c-hy-LUG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -388,16 +412,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-bZ-Mdu">
-                                <rect key="frame" x="160" y="394" width="55" height="30"/>
+                                <rect key="frame" x="160" y="410" width="55" height="30"/>
                                 <animations/>
                                 <state key="normal" title="小天使"/>
+                                <connections>
+                                    <action selector="angelButtonTap:" destination="3c2-lq-iSe" eventType="touchUpInside" id="fzK-as-ROp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="熱量計算" id="WKA-fF-w0k">
-                        <barButtonItem key="rightBarButtonItem" title="完成 " id="I9W-KU-Fvx"/>
+                        <barButtonItem key="rightBarButtonItem" title="完成 " id="I9W-KU-Fvx">
+                            <connections>
+                                <action selector="doneButtonTap:" destination="3c2-lq-iSe" id="QQh-I0-4N7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>

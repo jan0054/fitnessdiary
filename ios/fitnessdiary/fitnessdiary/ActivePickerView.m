@@ -12,4 +12,8 @@
 
 @implementation ActivePickerView
 
+- (IBAction)doneButtonTap:(UIBarButtonItem *)sender {
+    
+    [self performSegueWithIdentifier:@"togoallengthsegue" sender:nil];
+}
 @end
